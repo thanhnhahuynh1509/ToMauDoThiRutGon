@@ -51,7 +51,7 @@ public class XuLyDoThi {
 		return count;
 	}
 
-	public void sapXepDoThiTheoBacVaLuuVaoMangTmp(int[][] a, int[] tmp) {
+	private void sapXepDoThiTheoBacVaLuuVaoMangTmp(int[][] a, int[] tmp) {
 		int n = a.length;
 
 		for (int i = 0; i < n; i++) {
@@ -85,7 +85,7 @@ public class XuLyDoThi {
 
 	}
 
-	public int[] toMauDoThi(int[][] a) {
+	private int[] toMauDoThi(int[][] a) {
 
 		int count = 0;
 		int mau = 0;
@@ -106,7 +106,7 @@ public class XuLyDoThi {
 
 	}
 
-	public int toMauDinh(int[][] a, int mau, int[] mauCuaDinh, int[] tmp) {
+	private int toMauDinh(int[][] a, int mau, int[] mauCuaDinh, int[] tmp) {
 		int n = a.length;
 		int count = 0;
 
@@ -119,7 +119,7 @@ public class XuLyDoThi {
 		return count;
 	}
 
-	public boolean choPhepTo(int[][] a, int i, int[] mauCuaDinh, int mau) {
+	private boolean choPhepTo(int[][] a, int i, int[] mauCuaDinh, int mau) {
 		int n = a.length;
 		for (int j = 0; j < n; j++)
 			if (a[i][j] == 1 && mauCuaDinh[j] == mau)
